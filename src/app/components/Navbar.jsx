@@ -5,25 +5,26 @@ import { CiUser } from "react-icons/ci";
 import { FaLaptopCode } from "react-icons/fa6";
 import { IoBagCheckOutline } from "react-icons/io5";
 import { IoDocumentTextOutline } from "react-icons/io5";
+import { FaGithub } from "react-icons/fa6";
 const Navbar = () => {
   const links = [
     { title: "Home", link: "#", icon: <IoHomeOutline /> },
     { title: "About", link: "#", icon: <CiUser /> },
     { title: "Projects", link: "#", icon: <FaLaptopCode /> },
-    { title: "Experience", link: "#", icon: <IoBagCheckOutline /> },
+    // { title: "Experience", link: "#", icon: <IoBagCheckOutline /> },
     { title: "Resume", link: "#", icon: <IoDocumentTextOutline /> },
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full m-1  p-4 h-16 text-white z-10">
-      <div className="flex flex-row items-center justify-between">
-        <span>SJ</span>
+    <nav className="fixed top-0 left-0 w-full m-1 h-20 text-white z-10">
+      <div className="flex flex-row items-center p-4 justify-between text-lg">
+        <span className="text-xl font-bold">SJ</span>
         <ul className="flex space-x-6">
           {links.map((item, index) => (
             <li key={index}>
               <a
                 href={item.link}
-                className="hover:border-b-[#94539F] hover:border-b-2 flex flex-row items-center gap-1"
+                className="border-b-4 border-transparent hover:border-[#94539F] rounded-b-md flex flex-row items-center gap-1"
               >
                 {item.icon}
                 {item.title}
@@ -31,6 +32,9 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+        <span className="p-2 rounded-sm border-2 ">
+          <FaGithub className="text-2xl" />
+        </span>
       </div>
     </nav>
   );
