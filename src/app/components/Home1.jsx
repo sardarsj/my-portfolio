@@ -3,9 +3,8 @@ import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-import Link from "next/link";
 
-const HeroSection = () => {
+const Home1 = () => {
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -16,29 +15,31 @@ const HeroSection = () => {
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
           <h1 className="text-white mb-4 text-2xl sm:text-5xl lg:text-5xl lg:leading-normal font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-              Hello, I&apos;m{" "}
-            </span>
-            <br></br>
+            <span className="text-white bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
+              Hi There!
+              {/* Hello, I&apos;m{" "} */}
+            </span><br />
+            <span>I&apos;m{" "}</span>
+            <span className="text-[#94539F]">SIMARJEET SINGH</span>
+            {/* <br></br> */}
+            <br/>
+            <br/>
             <TypeAnimation
               sequence={[
-                "Simarjeet Singh",
-                1000,
+                // "Simarjeet Singh",
+                // 1000,
                 "Frontend Developer",
                 1000,
                 "MERN Stack Developer",
                 1500,
               ]}
               wrapper="span"
-              speed={50}
-              repeat={0}
+              speed={1}
+              repeat={Infinity}
             />
           </h1>
-          {/* <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptuous.
-          </p> */}
-          <div>
+          
+          {/* <div>
             <Link
               href="/#contact"
               className=" px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
@@ -53,7 +54,7 @@ const HeroSection = () => {
                 Download CV
               </span>
             </Link>
-          </div>
+          </div> */}
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -67,14 +68,15 @@ const HeroSection = () => {
               src="/images/home.svg"
               alt="hero image"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={300}
-              height={300}
+              width={500}
+              height={500}
             />
           </div>
         </motion.div>
       </div>
+      
     </section>
   );
 };
 
-export default HeroSection;
+export default Home1;

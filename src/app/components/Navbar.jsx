@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { IoHomeOutline } from "react-icons/io5";
 import { CiUser } from "react-icons/ci";
 import { FaLaptopCode } from "react-icons/fa6";
@@ -15,8 +15,24 @@ const Navbar = () => {
     { title: "Resume", link: "#", icon: <IoDocumentTextOutline /> },
   ];
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50); // Adjust scroll threshold as needed
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="fixed top-0 left-0 w-full m-1 h-20 text-white z-10">
+    <nav
+      className={`fixed top-0 left-0 w-full h-20 text-white z-10 transition-colors duration-300 ${
+        isScrolled ? "bg-black" : "bg-transparent"
+      }`}
+    >
       <div className="flex flex-row items-center p-4 justify-between text-lg">
         <span className="text-xl font-bold">SJ</span>
         <ul className="flex space-x-6">
