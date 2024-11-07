@@ -8,11 +8,10 @@ import { IoDocumentTextOutline } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa6";
 const Navbar = () => {
   const links = [
-    { title: "Home", link: "#", icon: <IoHomeOutline /> },
-    { title: "About", link: "#", icon: <CiUser /> },
-    { title: "Projects", link: "#", icon: <FaLaptopCode /> },
-    // { title: "Experience", link: "#", icon: <IoBagCheckOutline /> },
-    { title: "Resume", link: "#", icon: <IoDocumentTextOutline /> },
+    { title: "Home", link: "/", icon: <IoHomeOutline /> },
+    { title: "About", link: "/about", icon: <CiUser /> },
+    { title: "Projects", link: "/projects", icon: <FaLaptopCode /> },
+    { title: "Resume", link: "/resume", icon: <IoDocumentTextOutline /> },
   ];
 
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,7 +28,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full h-20 text-white z-10 transition-colors duration-300 ${
+      className={`sticky top-0 left-0 w-full h-20 text-white z-10 transition-colors duration-300 ${
         isScrolled ? "bg-black" : "bg-transparent"
       }`}
     >
