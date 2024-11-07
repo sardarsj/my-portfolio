@@ -17,21 +17,18 @@ const Home1 = () => {
           <h1 className="text-white mb-4 text-2xl sm:text-5xl lg:text-5xl lg:leading-normal font-extrabold">
             <span className="text-white bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
               Hi There!
-              {/* Hello, I&apos;m{" "} */}
             </span><br />
             <span>I&apos;m{" "}</span>
             <span className="text-[#94539F]">SIMARJEET SINGH</span>
-            {/* <br></br> */}
             <br/>
             <br/>
             <TypeAnimation
               sequence={[
                 // "Simarjeet Singh",
                 // 1000,
-                "Frontend Developer",
+                "Software Engineer",
                 1000,
-                "MERN Stack Developer",
-                1500,
+                
               ]}
               wrapper="span"
               speed={1}
