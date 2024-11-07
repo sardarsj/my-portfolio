@@ -11,11 +11,11 @@ const AboutSection1 = () => {
           <Image src="/images/about.png" width={400} height={400} />
         </div>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">Know Who I'M</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">Know Who I&apos;M</h2>
           <p className="text-base lg:text-lg">
             Hi Everyone, I am Simarjeet Singh from New Delhi, India. I am
             currently employed as a software developer at Keen & Able. I have
-            completed Bachelor's in Technology from IPU.
+            completed Bachelor&apos;s in Technology from IPU.
           </p>
           <br />
           <p>Apart from coding, some other activities that I love to do!</p>
