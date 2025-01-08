@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import AboutSection1 from "./components/AboutSection1";
 import AboutSection2 from "./components/AboutSection2";
 import Project from "./components/Project";
+import Education from "./components/Education";
 
 export default function Home() {
   return (
@@ -13,13 +14,16 @@ export default function Home() {
 
       <Navbar />
       <div className="container mt-10 mx-auto px-12 py-4 relative z-10">
-        {/* <Home1 /> */}
+        <Home1 />
         {/* about section */}
-        <AboutSection1 /> 
+        {/* <AboutSection1 />  */}
         {/* skill  section  */}
-        <AboutSection2 />
+        {/* <AboutSection2 /> */}
         {/* project section */}
-        <Project />
+        {/* <Project /> */}
+        {/* Education Section */}
+        <Education />
+        
       </div>
       <Footer />
     </main>

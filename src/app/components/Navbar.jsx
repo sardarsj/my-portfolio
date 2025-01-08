@@ -6,10 +6,12 @@ import { FaLaptopCode } from "react-icons/fa6";
 import { IoBagCheckOutline } from "react-icons/io5";
 import { IoDocumentTextOutline } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa6";
+import { FaChalkboardUser } from "react-icons/fa6";
 const Navbar = () => {
   const links = [
     { title: "Home", link: "/", icon: <IoHomeOutline /> },
     { title: "About", link: "/about", icon: <CiUser /> },
+    { title: "Education", link: "/education", icon: <FaChalkboardUser /> },
     { title: "Projects", link: "/projects", icon: <FaLaptopCode /> },
     { title: "Resume", link: "/resume", icon: <IoDocumentTextOutline /> },
   ];
@@ -39,17 +41,24 @@ const Navbar = () => {
             <li key={index}>
               <a
                 href={item.link}
-                className="border-b-4 border-transparent hover:border-[#94539F] rounded-b-md flex flex-row items-center gap-1"
+                className="relative flex flex-row items-center gap-1 group "
               >
                 {item.icon}
                 {item.title}
+                <span
+                  className="absolute top-7 left-0 h-[4px] rounded-full w-0 bg-[#94539F] transition-all duration-300 group-hover:w-full"
+                  aria-hidden="true"
+                ></span>
               </a>
             </li>
           ))}
         </ul>
-        <span className="p-2 rounded-sm border-2 ">
-          <FaGithub className="text-2xl" />
-        </span>
+
+        <a href="https://github.com/sardarsj" target="_blank">
+          <span className="p-2 w-20 flex justify-center border-2 rounded-sm ">
+            <FaGithub className="text-2xl opacity-100" />
+          </span>
+        </a>
       </div>
     </nav>
   );
