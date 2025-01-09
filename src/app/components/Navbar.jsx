@@ -11,7 +11,7 @@ const Navbar = () => {
   const links = [
     { title: "Home", link: "/", icon: <IoHomeOutline /> },
     { title: "About", link: "/about", icon: <CiUser /> },
-    { title: "Education", link: "/education", icon: <FaChalkboardUser /> },
+    // { title: "Education", link: "/education", icon: <FaChalkboardUser /> },
     { title: "Projects", link: "/projects", icon: <FaLaptopCode /> },
     { title: "Resume", link: "/resume", icon: <IoDocumentTextOutline /> },
   ];

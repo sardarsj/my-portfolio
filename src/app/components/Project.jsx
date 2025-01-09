@@ -43,7 +43,7 @@ export const projects = [
 const project = () => {
   return (
     <>
-      <h2 className="text-white text-center font-bold text-3xl">Projects </h2>
+      {/* <h2 className="text-white text-center font-bold text-3xl">Projects </h2> */}
       <div className="max-w-5xl mx-auto px-8">
       <HoverEffect items={projects} />
     </div>

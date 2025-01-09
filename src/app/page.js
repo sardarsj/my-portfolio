@@ -22,7 +22,7 @@ export default function Home() {
         {/* project section */}
         {/* <Project /> */}
         {/* Education Section */}
-        <Education />
+        {/* <Education /> */}
         
       </div>
       <Footer />

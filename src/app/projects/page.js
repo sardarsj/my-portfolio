@@ -1,7 +1,5 @@
 "use client";
-import AboutSection1 from "../components/AboutSection1";
-import AboutSection2 from "../components/AboutSection2";
-import Education from "../components/Education";
+import Project from "../components/Project";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
@@ -14,9 +12,7 @@ export default function About() {
       <Navbar />
       <section className="container mt-10 mx-auto px-12 py-4 relative z-10">
         <div>
-          <AboutSection1 />
-          <Education />
-          <AboutSection2 />
+          <Project />
         </div>
       </section>
       <Footer />
